@@ -4,6 +4,7 @@ import 'package:introduction_screen/introduction_screen.dart';
 void main() {
   runApp(const MaterialApp(
     home: OnboardingScreen(),
+    debugShowCheckedModeBanner: false,
   ));
 }
 
