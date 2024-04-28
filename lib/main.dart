@@ -23,8 +23,9 @@ class OnboardingScreen extends StatelessWidget {
         // Page 2
         PageViewModel(
           title: "Explore Features",
-          body: "Discover amazing features in our app.",
-          image: Image.asset("assets/images/feature.png", height: 175.0),
+          body: "Stay up to date with the latest news.",
+          image:
+              const Center(child: Icon(Icons.notifications_active, size: 50.0)),
         ),
         // Page 3
         PageViewModel(
@@ -35,7 +36,6 @@ class OnboardingScreen extends StatelessWidget {
         ),
       ],
       onDone: () {
-        // Navigate to the main screen when "Get Started" is pressed
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (_) => const MainScreen()),
         );
@@ -68,7 +68,6 @@ class MainScreen extends StatelessWidget {
       body: const Center(
         child: Text("Welcome to the Main Screen!"),
       ),
-      // Add your other widgets and components here
     );
   }
 }
